@@ -1,0 +1,42 @@
+
+<script src="http://www.lilbluj.com/js/posts/linux-system-call-table/jquery.min.js"></script>
+<script src="http://www.lilbluj.com/js/posts/linux-system-call-table/syscall-table.js"></script>
+<link rel="stylesheet" href="http://www.lilbluj.com/js/posts/linux-system-call-table/syscall-table.css">
+
+<div id="sys-contents">
+		<div id="sys-title">Linux System Calls</div>
+		<div id='sys-container'>
+			<div id='sys-right-window'>
+				<button type="button" id='big-64' class="pressed" onclick="loadJSON('http://www.lilbluj.comhost/js/posts/linux-system-call-table/jsons/sys.json');swapCSS(64);">64</button>
+				<button type="button" id='big-32' class="unpressed" onclick="loadJSON('http://www.lilbluj.com/js/posts/linux-system-call-table/jsons/sys32.json');swapCSS(32);">32</button>
+				<div id='sys-search'>
+					<form id="sys-live-search" action="" class="styled" method="post">
+						<p id="search-text">Search:</p>
+						<input type="text" class="sys-text-input" id="sys-filter" value="" />
+					</form>
+					<form  class="sys-radio show" id="radio-64" action="">
+						<input type="radio" name="search-type" value="%ax"><div class="sys-radio-text">%rax</div>
+						<input type="radio" name="search-type" value="syscall"><div class="sys-radio-text">System call</div>
+						<input type="radio" name="search-type" value="%rdi"><div class="sys-radio-text">%rdi</div>
+						<input type="radio" name="search-type" value="%rsi"><div class="sys-radio-text">%rsi</div>
+						<input type="radio" name="search-type" value="%rdx"><div class="sys-radio-text">%rdx</div>
+						<input type="radio" name="search-type" value="%r10"><div class="sys-radio-text">%r10</div>
+						<input type="radio" name="search-type" value="%r8"><div class="sys-radio-text">%r8</div>
+						<input type="radio" name="search-type" value="%r9"><div class="sys-radio-text">%r9</div>
+						<input type="radio" name="search-type" checked="checked" value="all"><div class="sys-radio-text">all</div>															
+					</form>
+					<form class="sys-radio no-show" id="radio-32" action="">
+						<input type="radio" name="search-type" value="%ax"><div class="sys-radio-text">%eax</div>
+						<input type="radio" name="search-type" value="syscall"><div class="sys-radio-text">System call</div>
+						<input type="radio" name="search-type" value="%ebx"><div class="sys-radio-text">%ebx</div>
+						<input type="radio" name="search-type" value="%ecx"><div class="sys-radio-text">%ecx</div>
+						<input type="radio" name="search-type" value="%edx"><div class="sys-radio-text">%edx</div>
+						<input type="radio" name="search-type" value="%esx"><div class="sys-radio-text">%esx</div>
+						<input type="radio" name="search-type" value="%edi"><div class="sys-radio-text">%edi</div>
+						<input type="radio" name="search-type" checked="checked" value="all"><div class="sys-radio-text">all</div>													
+					</form>
+					
+					
+				</div>
+			</div>
+		</div>
