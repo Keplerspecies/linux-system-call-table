@@ -1,14 +1,14 @@
 
-<script src="http://www.lilbluj.com/js/posts/linux-system-call-table/jquery.min.js"></script>
-<script src="http://www.lilbluj.com/js/posts/linux-system-call-table/syscall-table.js"></script>
-<link rel="stylesheet" href="http://www.lilbluj.com/js/posts/linux-system-call-table/syscall-table.css">
+<script src="/jquery.min.js"></script>
+<script src="/syscall-table.js"></script>
+<link rel="stylesheet" href="/syscall-table.css">
 
 <div id="sys-contents">
 		<div id="sys-title">Linux System Calls</div>
 		<div id='sys-container'>
 			<div id='sys-right-window'>
-				<button type="button" id='big-64' class="pressed" onclick="loadJSON('http://www.lilbluj.comhost/js/posts/linux-system-call-table/jsons/sys.json');swapCSS(64);">64</button>
-				<button type="button" id='big-32' class="unpressed" onclick="loadJSON('http://www.lilbluj.com/js/posts/linux-system-call-table/jsons/sys32.json');swapCSS(32);">32</button>
+				<button type="button" id='big-64' class="pressed" onclick="loadJSON('/jsons/sys.json');swapCSS(64);">64</button>
+				<button type="button" id='big-32' class="unpressed" onclick="loadJSON('/jsons/sys32.json');swapCSS(32);">32</button>
 				<div id='sys-search'>
 					<form id="sys-live-search" action="" class="styled" method="post">
 						<p id="search-text">Search:</p>

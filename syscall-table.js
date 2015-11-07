@@ -1,4 +1,4 @@
-var PREFIX="http://localhost/js/posts/linux-system-call-table/";
+var PREFIX="/linux-system-call-table/";
 $(document).ready(function(){
 	loadJSON(PREFIX+"jsons/sys.json");
 });
